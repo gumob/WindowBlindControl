@@ -1,20 +1,70 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/c++,c,homeassistant,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,c,homeassistant,visualstudiocode
+
+### C ###
 # Prerequisites
 *.d
 
-# Compiled Object files
-*.slo
-*.lo
+# Object files
 *.o
+*.ko
 *.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
 *.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### C++ ###
+# Prerequisites
+
+# Compiled Object files
+*.slo
+
+# Precompiled Headers
+
+# Compiled Dynamic libraries
 
 # Fortran module files
 *.mod
@@ -22,11 +72,137 @@
 
 # Compiled Static libraries
 *.lai
-*.la
-*.a
-*.lib
 
 # Executables
-*.exe
-*.out
-*.app
+
+### HomeAssistant ###
+# Files with personal details
+*.crt
+*.csr
+*.key
+.google.token
+.uuid
+icloud/
+google_calendars.yaml
+harmony_media_room.conf
+home-assistant.db
+home-assistant_v2.db
+home-assistant_v2.db-*
+html5_push_registrations.conf
+ip_bans.yaml
+known_devices.yaml
+phue.conf
+plex.conf
+pyozw.sqlite
+secrets.yaml
+tradfri.conf
+
+# Temporary files
+*.db-journal
+*.pid
+tts
+
+# automatically downloaded dependencies
+deps
+lib
+www
+
+# Log files
+home-assistant.log
+ozw_log.txt
+
+# Development files
+custom_components/
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
+!.vscode/*.code-snippets
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,c,homeassistant,visualstudiocode
+
+# Arduino
+app/bin/
+app/pde.jar
+build/macosx/work/
+arduino-core/bin/
+arduino-core/arduino-core.jar
+hardware/arduino/bootloaders/caterina_LUFA/Descriptors.o
+hardware/arduino/bootloaders/caterina_LUFA/Descriptors.lst
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.sym
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.o
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.map
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.lst
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.lss
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.elf
+hardware/arduino/bootloaders/caterina_LUFA/Caterina.eep
+hardware/arduino/bootloaders/caterina_LUFA/.dep/
+build/*.zip
+build/*.tar.bz2
+build/windows/work/
+build/windows/*.zip
+build/windows/*.tgz
+build/windows/*.tar.bz2
+build/windows/libastylej*
+build/windows/liblistSerials*
+build/windows/arduino-*.zip
+build/windows/dist/*.tar.gz
+build/windows/dist/*.tar.bz2
+build/windows/launch4j-*.tgz
+build/windows/launch4j-*.zip
+build/windows/launcher/launch4j
+build/windows/WinAVR-*.zip
+build/macosx/arduino-*.zip
+build/macosx/dist/*.tar.gz
+build/macosx/dist/*.tar.bz2
+build/macosx/*.tar.bz2
+build/macosx/libastylej*
+build/macosx/appbundler*.jar
+build/macosx/appbundler*.zip
+build/macosx/appbundler
+build/macosx/appbundler-1.0ea-arduino?
+build/macosx/appbundler-1.0ea-arduino*.zip
+build/macosx/appbundler-1.0ea-upstream*.zip
+build/linux/work/
+build/linux/dist/*.tar.gz
+build/linux/dist/*.tar.bz2
+build/linux/*.tgz
+build/linux/*.tar.xz
+build/linux/*.tar.bz2
+build/linux/*.zip
+build/linux/libastylej*
+build/linux/liblistSerials*
+build/shared/arduino-examples*
+build/shared/reference*.zip
+build/shared/Edison*.zip
+build/shared/Galileo*.zip
+build/shared/WiFi101-Updater-ArduinoIDE-Plugin*.zip
+test-bin
+*.iml
+.idea
+.DS_Store
+.directory
+hardware/arduino/avr/libraries/Bridge/examples/XivelyClient/passwords.h
+avr-toolchain-*.zip
+/app/nbproject/private/
+/arduino-core/nbproject/private/
+/app/build/
+/arduino-core/build/
+
+manifest.mf
+nbbuild.xml
+nbproject
