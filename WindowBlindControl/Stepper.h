@@ -94,6 +94,7 @@ class Stepper {
     void setSpeed(long whatSpeed);
 
     // mover method:
+    void angle(float angle_to_move);
     void step(int number_of_steps);
 
     int version(void);
@@ -118,4 +119,3 @@ class Stepper {
 };
 
 #endif
-

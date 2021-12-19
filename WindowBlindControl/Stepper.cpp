@@ -181,6 +181,11 @@ void Stepper::setSpeed(long whatSpeed)
  * Moves the motor steps_to_move steps.  If the number is negative,
  * the motor moves in the reverse direction.
  */
+void Stepper::angle(float angle_to_move) {
+  float step = 2048 * angle_to_move / 360.0;
+  this->step((int)step);
+}
+
 void Stepper::step(int steps_to_move)
 {
   int steps_left = abs(steps_to_move);  // how many steps to take
