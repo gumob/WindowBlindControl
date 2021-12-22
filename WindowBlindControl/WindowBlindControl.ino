@@ -34,36 +34,47 @@ void loop()
     switch (results.value) {
 
       case 0xFFA25D: /** Power */
+        Serial.println("Power Pressed");
         break;
 
       case 0xFFE21D: /** Func/Stop */
+        Serial.println("Func/Stop Pressed");
         break;
 
       case 0xFF22DD: /** Backward */
+        Serial.println("Backward Pressed");
         break;
 
       case 0xFF02FD: /** Play/Pause */
+        Serial.println("Play/Pause Pressed");
         break;
 
       case 0xFFC23D: /** Forward */
+        Serial.println("Forward Pressed");
         break;
 
-      case 0xFFA857: /** Volume Up */
+      case 0xFF629D: /** Volume Up */
+        Serial.println("Volume Up Pressed");
         break;
 
-      case 0xFF629D: /** Volume Down */
+      case 0xFFA857: /** Volume Down */
+        Serial.println("Volume Down Pressed");
         break;
 
       case 0xFF906F: /** Up */
+        Serial.println("Up Pressed");
         break;
 
       case 0xFFE01F: /** Down */
+        Serial.println("Down Pressed");
         break;
 
       case 0xFF9867: /** EQ */
+        Serial.println("EQ Pressed");
         break;
 
       case 0xFFB04F: /** Repeat */
+        Serial.println("Repeat Pressed");
         break;
 
       case 0xFF6897: /** 0 */
